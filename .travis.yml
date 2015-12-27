@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1
 
-install: gem install jekyll html-proofer jekyll-sitemap redcarpet
+install: gem install jekyll html-proofer jekyll-sitemap redcarpet pygments
 script: scripts/build.sh
 
 # branch whitelist
