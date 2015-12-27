@@ -17,3 +17,4 @@ else
   echo 'Invalid branch. You can only deploy from draft branch.'
   exit 1
 fi
+
