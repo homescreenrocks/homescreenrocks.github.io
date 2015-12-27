@@ -4,9 +4,8 @@ rvm:
 install: gem install jekyll html-proofer jekyll-sitemap redcarpet pygments.rb
 script: scripts/build.sh
 branches:
-  only:
-  - draft
-  - "/pages-(.*)/"
+  except:
+  - master
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
