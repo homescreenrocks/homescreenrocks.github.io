@@ -8,7 +8,7 @@ if [[ $TRAVIS_BRANCH == 'draft' ]] ; then
   git config user.email "bot@homescreen.rocks"
 
   git add .
-  git commit -m "Deploy new website content."
+  git commit -m "Deploy website"
 
   # We redirect any output to
   # /dev/null to hide any sensitive credential data that might otherwise be exposed.

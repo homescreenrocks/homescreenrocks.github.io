@@ -89,8 +89,8 @@ p
 
 #sidebar-wrapper
 {
-  margin-left:-250px;
-  left:250px;
+  margin-left:-280px;
+  left:280px;
   width:280px;
   background:#f8f8f8;
   position:fixed;
@@ -107,16 +107,20 @@ p
 {
   position:absolute;
   top:0;
-  width:280px;
+  width:265px;
   list-style:none;
   margin:0;
   padding:30px 0 0
 }
 
+.sidebar-nav>img {
+  max-width: 200px;
+}
+
 .sidebar-nav li
 {
   line-height:30px;
-  text-indent:40px;
+  padding-left:20px;
   font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
   font-weight:200;
   color:#9c9c9c;
