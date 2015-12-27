@@ -17,3 +17,5 @@ deploy:
   script: scripts/deploy.sh
   on:
     branch: draft
+notifications:
+  email: false
