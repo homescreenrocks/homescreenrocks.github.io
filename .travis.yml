@@ -1,20 +1,17 @@
 language: ruby
 rvm:
 - 2.1
-
 install: gem install jekyll html-proofer jekyll-sitemap redcarpet pygments.rb
 script: scripts/build.sh
-
-# branch whitelist
 branches:
   only:
-  - draft     # test the draft branch
-  - /pages-(.*)/ # test every branch which starts with "pages-"
-
+  - draft
+  - "/pages-(.*)/"
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - GH_REF: github.com/homescreenrocks/homescreenrocks.github.io.git
+  - secure: g6i2n2GB5lr75Fk1DYPyFv5wmIY/10wZyzKnr3cEbIQe8cHqI7bTtViGjS5qdqGqPdRrcPkP7E8GSdKuZF2F2CyQaLvuf9FuIhPV7KNIOJSSiPv45f8kC+v2MFFWUi8dWmnE2Yvnvb4LPhQAJnilbOsaUBxVa874vLF2GQLwO9Y8nDES6untV0XgRbw+ADLNtXhLLm2WmawMcEB2XImMvaoJcAGa29IU1/q/7YY311PCJQhufX83Y0guwMQx2Vn8R4xVjG6lTcDCmBVIh89ax+3qgfkE9QLiVGn0aFReRxrOBFWpCOR0wDC7Q/puvRzCNdZnfOpBM1NlRKI+g1KC/E+c5JnDRhkbQEjjfB3E0KQUo1gCuQiNK6mEkWGZr16CMBp9nAb5TcuZk4ULemzFdw4BD0HTJZqH+v3qPWyn4VlM7pXvF6gyh6ID3UmXk3Z9tFoD0R9CmN7w+/Y/bqY1j2CbxMKwLMgk4haSPEE2bwow0OOhvjuL4+EcjMUd+odBPXVeeAh1sRN4uA2k9OWl+exkbcowvblnYXSIcm5nhZXJpUNTLRbZn+mKBiq23cypV3x1dCIdI/dQRpq1AocMIEL9SWDLTnkFM2IUO+gemsclYXRDXrVVXm+wFeMk9WekruviFGJQQPdZruUo9GdSoFzNol/HMSZPFWYwBOszLx0=
 deploy:
   skip_cleanup: true
   provider: script
