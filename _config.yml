@@ -1,29 +1,28 @@
-name: Homescreen
-author: homescreen.rocks
-baseurl: 
-description: Your favorite touchscreen app for all you home functions. See the outside weather, see when your underground or bus departs, control your Philips hue lights or just to deeply impress your friends.
-github: https://github.com/homescreenrocks/homescreen
-facebook: http://www.facebook.com
-email: info[at]homescreen.rocks
-location: 42°2'16"N   70°12'47"W
-#disqus: diqus-username
+# Site settings
+title: Homescreen
+email: info@homescreen.rocks
+description: > # this means to ignore newlines until "baseurl:"
+  Your favorite touchscreen app for all you home functions. 
+  See the outside weather, see when your underground or bus departs, 
+  control your Philips hue lights or just to deeply impress your friends.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://homescreen.rocks" # the base hostname & protocol for your site
 
-##Make sure to edit the above fields, especially for disqus.
+# User setting
+owner: Homescreen Rocks
+email: info@homescreen.rocks
+facebook_username:
+twitter_username:
+github_username: https://github.com/homescreenrocks
+address:
+  - line:
+  - line:
+  # Feel free to add more lines here 
+telephone:
+copyright: 2016 by Homescreen Rocks
 
+# API settings
+google_api_key:
 
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables"]
-
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+# Build settings
+markdown: kramdown
